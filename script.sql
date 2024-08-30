@@ -83,7 +83,7 @@ CREATE PROCEDURE getOrdersByDate
     @OrderDateEnd DATE
 AS
 BEGIN
-    SELECT * FROM orders WHERE WHERE OrderDate >= @OrderDateStart AND OrderDate <= @OrderDateEnd;
+    SELECT * FROM orders WHERE OrderDate >= @OrderDateStart AND OrderDate <= @OrderDateEnd;
 
 END
 GO
