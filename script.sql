@@ -33,6 +33,7 @@ CREATE TABLE orders (
     Country VARCHAR(20),
     CreatedAt DATETIME DEFAULT GETDATE(),
     FOREIGN KEY (CustomerID) REFERENCES customers(CustomerID) ON DELETE CASCADE,
+    FOREIGN KEY (ProductID) REFERENCES products(ProductID)
 );
 
 CREATE TABLE products (
